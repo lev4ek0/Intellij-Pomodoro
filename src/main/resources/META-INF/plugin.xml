@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>intellij-pomodoro</id>
+    <name>PomodoroWidget</name>
+    <vendor url="https://vk.com/lev4ekr">Lev Belous</vendor>
+
+    <description>
+        Plugin for your time management. Helps you to control your time.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory id="PomodoroWidget" implementation="PomodoroWidgetFactory"/>
+    </extensions>
+
+    <actions>
+        <action id="PomodoroSetMsgAction" class="PomodoroSetMsgAction" text="Set Message">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH"/>
+        </action>
+    </actions>
+
+</idea-plugin>
